@@ -41,10 +41,10 @@ public class StockWatcher implements EntryPoint {
 	/** * Entry point method. */
 	public void onModuleLoad() {
 		// Create table for stock data.
-		stocksFlexTable.setText(0, 0, "Symbol");
-		stocksFlexTable.setText(0, 1, "Price"); 
-		stocksFlexTable.setText(0, 2, "Change"); 
-		stocksFlexTable.setText(0, 3, "Remove");
+		stocksFlexTable.setText(0, 0, "Symbol YES");
+		stocksFlexTable.setText(0, 1, "Price YES"); 
+		stocksFlexTable.setText(0, 2, "Change YES"); 
+		stocksFlexTable.setText(0, 3, "Remove YES");
 		
 		// Add styles to elements in the stock list table.
 	    stocksFlexTable.getRowFormatter().addStyleName(0, "watchListHeader");
@@ -106,7 +106,7 @@ public class StockWatcher implements EntryPoint {
 
 		    // Stock code must be between 1 and 10 chars that are numbers, letters, or dots.
 		    if (!symbol.matches("^[0-9A-Z\\.]{1,10}$")) {
-		      Window.alert("'" + symbol + "' is not a valid symbol.");
+		      Window.alert("'" + symbol + "' is not a valid symbol SO FIX IT!!!!");
 		      newSymbolTextBox.selectAll();
 		      return;
 		    }
